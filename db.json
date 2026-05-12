@@ -2,53 +2,49 @@
     "produtos": [
         {
             "id": 1,
-            "sku": "LEG-PRETA-M",
-            "nome": "Calça Legging Cós Alto",
-            "categoria": "Legging",
+            "referencia": "LEG-001-PR",
+            "nome": "Calça Legging Blackout",
+            "categoria": "Calças",
             "tamanho": "M",
-            "preco": 89.90,
-            "estoque": 15
+            "preco": 119.90,
+            "estoque": 10,
+            "ativo": true
         },
         {
             "id": 2,
-            "sku": "TOP-CRUZ-P",
-            "nome": "Top Nadador Cruzado",
-            "categoria": "Top",
+            "referencia": "TOP-005-AZ",
+            "nome": "Top Cross Azul Marinho",
+            "categoria": "Tops",
             "tamanho": "P",
-            "preco": 45.50,
-            "estoque": 8
+            "preco": 59.90,
+            "estoque": 0,
+            "ativo": true
         },
         {
             "id": 3,
-            "sku": "BER-CICL-G",
-            "nome": "Bermuda Ciclista DryFit",
-            "categoria": "Bermuda",
+            "referencia": "SHV-002-CZ",
+            "nome": "Short Runner Cinza",
+            "categoria": "Shorts",
             "tamanho": "G",
-            "preco": 65.00,
-            "estoque": 20
+            "preco": 75.00,
+            "estoque": 5,
+            "ativo": true
         }
     ],
     "funcionarios": [
         {
             "id": 1,
-            "nome": "Alice Gerente",
-            "email": "alice@fitstore.com",
+            "nome": "Matheus Gerente",
+            "email": "matheus@fitstore.com",
             "cargo": "Gerente",
             "ativo": true
         },
         {
             "id": 2,
-            "nome": "Roberto Vendedor",
-            "email": "roberto@fitstore.com",
+            "nome": "Ana Vendedora",
+            "email": "ana@fitstore.com",
             "cargo": "Vendedor",
             "ativo": true
-        },
-        {
-            "id": 3,
-            "nome": "Carla Estoque",
-            "email": "carla@fitstore.com",
-            "cargo": "Estoquista",
-            "ativo": false
         }
     ]
 }
