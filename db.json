@@ -1,0 +1,54 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "sku": "LEG-PRETA-M",
+            "nome": "Calça Legging Cós Alto",
+            "categoria": "Legging",
+            "tamanho": "M",
+            "preco": 89.90,
+            "estoque": 15
+        },
+        {
+            "id": 2,
+            "sku": "TOP-CRUZ-P",
+            "nome": "Top Nadador Cruzado",
+            "categoria": "Top",
+            "tamanho": "P",
+            "preco": 45.50,
+            "estoque": 8
+        },
+        {
+            "id": 3,
+            "sku": "BER-CICL-G",
+            "nome": "Bermuda Ciclista DryFit",
+            "categoria": "Bermuda",
+            "tamanho": "G",
+            "preco": 65.00,
+            "estoque": 20
+        }
+    ],
+    "funcionarios": [
+        {
+            "id": 1,
+            "nome": "Alice Gerente",
+            "email": "alice@fitstore.com",
+            "cargo": "Gerente",
+            "ativo": true
+        },
+        {
+            "id": 2,
+            "nome": "Roberto Vendedor",
+            "email": "roberto@fitstore.com",
+            "cargo": "Vendedor",
+            "ativo": true
+        },
+        {
+            "id": 3,
+            "nome": "Carla Estoque",
+            "email": "carla@fitstore.com",
+            "cargo": "Estoquista",
+            "ativo": false
+        }
+    ]
+}
