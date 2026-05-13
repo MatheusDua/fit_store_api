@@ -8,7 +8,8 @@
       "tamanho": "M",
       "preco": 119.9,
       "estoque": 10,
-      "ativo": true
+      "ativo": true,
+      "id_funcionario": 1
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "tamanho": "P",
       "preco": 59.9,
       "estoque": 0,
-      "ativo": true
+      "ativo": true,
+      "id_funcionario": 1
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "tamanho": "G",
       "preco": 75,
       "estoque": 5,
-      "ativo": true
+      "ativo": true,
+      "id_funcionario": 2
     },
     {
       "id": 4,
@@ -36,7 +39,8 @@
       "referencia": "LEG-001",
       "preco": 89.9,
       "estoque": 10,
-      "ativo": true
+      "ativo": true,
+      "id_funcionario": 2
     },
     {
       "id": 5,
@@ -44,7 +48,8 @@
       "referencia": "LEG-043",
       "preco": 89.9,
       "estoque": 10,
-      "ativo": true
+      "ativo": true,
+      "id_funcionario": 2
     }
   ],
   "funcionarios": [
