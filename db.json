@@ -1,50 +1,66 @@
 {
-    "produtos": [
-        {
-            "id": 1,
-            "referencia": "LEG-001-PR",
-            "nome": "Calça Legging Blackout",
-            "categoria": "Calças",
-            "tamanho": "M",
-            "preco": 119.90,
-            "estoque": 10,
-            "ativo": true
-        },
-        {
-            "id": 2,
-            "referencia": "TOP-005-AZ",
-            "nome": "Top Cross Azul Marinho",
-            "categoria": "Tops",
-            "tamanho": "P",
-            "preco": 59.90,
-            "estoque": 0,
-            "ativo": true
-        },
-        {
-            "id": 3,
-            "referencia": "SHV-002-CZ",
-            "nome": "Short Runner Cinza",
-            "categoria": "Shorts",
-            "tamanho": "G",
-            "preco": 75.00,
-            "estoque": 5,
-            "ativo": true
-        }
-    ],
-    "funcionarios": [
-        {
-            "id": 1,
-            "nome": "Matheus Gerente",
-            "email": "matheus@fitstore.com",
-            "cargo": "Gerente",
-            "ativo": true
-        },
-        {
-            "id": 2,
-            "nome": "Ana Vendedora",
-            "email": "ana@fitstore.com",
-            "cargo": "Vendedor",
-            "ativo": true
-        }
-    ]
+  "produtos": [
+    {
+      "id": 1,
+      "referencia": "LEG-001-PR",
+      "nome": "Calça Legging Blackout",
+      "categoria": "Calças",
+      "tamanho": "M",
+      "preco": 119.9,
+      "estoque": 10,
+      "ativo": true
+    },
+    {
+      "id": 2,
+      "referencia": "TOP-005-AZ",
+      "nome": "Top Cross Azul Marinho",
+      "categoria": "Tops",
+      "tamanho": "P",
+      "preco": 59.9,
+      "estoque": 0,
+      "ativo": true
+    },
+    {
+      "id": 3,
+      "referencia": "SHV-002-CZ",
+      "nome": "Short Runner Cinza",
+      "categoria": "Shorts",
+      "tamanho": "G",
+      "preco": 75,
+      "estoque": 5,
+      "ativo": true
+    },
+    {
+      "id": 4,
+      "nome": "Legging Preta",
+      "referencia": "LEG-001",
+      "preco": 89.9,
+      "estoque": 10,
+      "ativo": true
+    },
+    {
+      "id": 5,
+      "nome": "Legging Preta-verde",
+      "referencia": "LEG-043",
+      "preco": 89.9,
+      "estoque": 10,
+      "ativo": true
+    }
+  ],
+  "funcionarios": [
+    {
+      "id": 1,
+      "nome": "Matheus Gerente",
+      "email": "matheus@fitstore.com",
+      "cargo": "Gerente",
+      "ativo": true
+    },
+    {
+      "id": 2,
+      "nome": "Ana Vendedora",
+      "email": "ana@fitstore.com",
+      "cargo": "Vendedor",
+      "ativo": true
+    }
+  ]
 }
