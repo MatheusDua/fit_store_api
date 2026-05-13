@@ -1,0 +1,26 @@
+extends layouts/main.pug
+
+block content
+  .header-vitrine
+    if busca
+      h2 Resultados para: "#{ busca }"
+    else
+      h2 Catálogo Completo
+
+  .vitrine-grid
+    if produtos.length > 0
+      each produto in produtos
+        .produto-card(class=produto.estoque === 0 ? "card-esgotado" : "")
+          h3.nome-produto= produto.nome
+          p.ref-produto Ref: #{ produto.referencia }
+
+          p.preco-produto R$ #{ produto.preco }
+
+          if produto.estoque === 0
+            p.badge-esgotado ESGOTADO
+          else
+            p.estoque-produto Estoque: #{ produto.estoque } un.
+
+          a.btn-detalhes(href="/vitrine/" + produto.id) Ver Detalhes
+    else
+      p.msg-vazia Nenhuma peça encontrada no catálogo.

@@ -1,0 +1,21 @@
+extends layouts/main.pug
+
+block content
+  .detalhe-container
+    .detalhe-card
+      h2= produto.nome
+      p.ref-destaque Referência: #{ produto.referencia }
+
+      .info-valores
+        h3 R$ #{ produto.preco }
+
+        if produto.estoque === 0
+          span.badge-esgotado Sem estoque no momento
+        else
+          span.badge-estoque Disponível: #{ produto.estoque } unidades
+
+      if produto.ativo === false
+        p.badge-inativo Este produto está desativado no sistema.
+
+      .acoes-detalhe
+        a.btn-voltar(href="/vitrine") &larr; Voltar para a Vitrine

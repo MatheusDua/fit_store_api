@@ -1,0 +1,28 @@
+doctype html
+html(lang="pt-BR")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title= title || "FitStore"
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    header
+      nav
+        .nav-container
+          a.logo(href="/vitrine") FitStore
+          .search-box
+            form(action="/vitrine", method="GET")
+              input(
+                type="text",
+                name="busca",
+                placeholder="Nome ou referência...",
+                value=busca
+              )
+              button(type="submit") Buscar
+
+    main.container
+      block content
+
+    footer
+      .footer-content
+        p &copy; 2026 FitStore - Equipamentos e Roupas Fitness

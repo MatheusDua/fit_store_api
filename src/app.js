@@ -21,6 +21,7 @@ const logger = (req, res, next) => {
 };
 app.use(logger);
 
+
 app.use('/api', produtoRoutes);
 app.use('/', webRoutes);
 

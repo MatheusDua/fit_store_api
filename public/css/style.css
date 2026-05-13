@@ -1,0 +1,151 @@
+:root {
+  --primary: #1a1a1a;
+  --accent: #ff4757;
+  --bg: #f1f2f6;
+  --white: #ffffff;
+  --text: #2f3542;
+  --success: #2ed573;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.nav-container {
+  background-color: var(--primary);
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.search-box form {
+  display: flex;
+}
+
+.search-box input {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  width: 250px;
+}
+
+.search-box button {
+  padding: 0.6rem 1.2rem;
+  background-color: var(--accent);
+  color: var(--white);
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+
+.header-vitrine h2 {
+  margin-bottom: 2rem;
+  border-left: 5px solid var(--accent);
+  padding-left: 1rem;
+}
+
+.vitrine-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+.produto-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.produto-card:hover {
+  transform: translateY(-8px);
+}
+
+.card-esgotado {
+  background-color: #f8d7da;
+  border: 1px solid #f5c2c7;
+}
+
+.nome-produto {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+  color: var(--primary);
+}
+
+.ref-produto {
+  color: #747d8c;
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.preco-produto {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--success);
+  margin: 1rem 0;
+}
+
+.btn-detalhes {
+  display: block;
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  background-color: var(--primary);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.badge-esgotado {
+  background: var(--accent);
+  color: var(--white);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.detalhe-card {
+  background: var(--white);
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-voltar {
+  display: inline-block;
+  margin-top: 2rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 4rem 0;
+  color: #a4b0be;
+  font-size: 0.9rem;
+}
