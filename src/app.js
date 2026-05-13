@@ -2,6 +2,7 @@ import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import produtoRoutes from './routes/produto.routes.js';
+import webRoutes from './routes/web.routes.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -21,6 +22,7 @@ const logger = (req, res, next) => {
 app.use(logger);
 
 app.use('/api', produtoRoutes);
+app.use('/', webRoutes);
 
 app.use((req, res, next) => {
     res.status(404).json({ mensagem: "A rota solicitada não existe." });
