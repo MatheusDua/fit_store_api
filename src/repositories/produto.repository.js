@@ -6,10 +6,12 @@ class ProdutoRepository {
         return db.data.produtos;
     }
 
-    static async findByName(nome) {
+    static async findProduct(campo, valor) {
         await db.read();
+        const termo = valor.toString().toLowerCase();
+
         return db.data.produtos.filter(p =>
-            p.nome.toLowerCase().includes(nome.toLowerCase())
+            p[campo] && p[campo].toString().toLowerCase() === termo
         );
     }
 

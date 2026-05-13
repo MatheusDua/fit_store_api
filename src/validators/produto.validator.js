@@ -1,5 +1,5 @@
 import { body, param } from 'express-validator';
-import { verificarErros } from '../middlewares/validator.middleware.js';
+import { verificarErros } from '../middlewares/validation.middleware.js';
 
 export const regrasValidacaoProduto = [
     body('id')
