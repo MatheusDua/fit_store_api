@@ -2,6 +2,7 @@ import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import produtoRoutes from './routes/produto.routes.js';
+import funcionarioRoutes from './routes/funcionario.routes.js'
 import webRoutes from './routes/web.routes.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -23,6 +24,7 @@ app.use(logger);
 
 
 app.use('/api', produtoRoutes);
+app.use('/api/funcionarios', funcionarioRoutes);
 app.use('/', webRoutes);
 
 app.use((req, res, next) => {

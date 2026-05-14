@@ -66,6 +66,27 @@
       "email": "ana@fitstore.com",
       "cargo": "Vendedor",
       "ativo": true
+    },
+    {
+      "id": 3,
+      "nome": "João Carlos",
+      "email": "joao@fitstore.com",
+      "cargo": "Vendedor",
+      "ativo": true
+    },
+    {
+      "id": 4,
+      "nome": "João Carlos",
+      "email": "joao1@fitstore.com",
+      "cargo": "Vendedor",
+      "ativo": true
+    },
+    {
+      "id": 5,
+      "nome": "Hacker",
+      "email": "hacker@fitstore.com",
+      "cargo": "Invasor",
+      "ativo": true
     }
   ]
 }
