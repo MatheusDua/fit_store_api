@@ -1,0 +1,39 @@
+import { body } from 'express-validator';
+import { verificarErros } from '../middlewares/validation.middleware.js';
+
+export const criarFuncionarioValidation = [
+    body('nome')
+        .trim()
+        .notEmpty().withMessage('O nome é obrigatório.')
+        .isLength({ min: 3 }).withMessage('O nome deve ter pelo menos 3 caracteres.'),
+
+    body('email')
+        .trim()
+        .notEmpty().withMessage('O e-mail é obrigatório.')
+        .isEmail().withMessage('Formato de e-mail inválido.'),
+
+    body('cargo')
+        .trim()
+        .notEmpty().withMessage('O cargo é obrigatório.'),
+
+    verificarErros
+];
+
+export const atualizarFuncionarioValidation = [
+    body('nome')
+        .optional()
+        .trim()
+        .isLength({ min: 3 }).withMessage('O nome deve ter pelo menos 3 caracteres.'),
+
+    body('email')
+        .optional()
+        .trim()
+        .isEmail().withMessage('Formato de e-mail inválido.'),
+
+    body('cargo')
+        .optional()
+        .trim()
+        .notEmpty().withMessage('O cargo não pode ser vazio.'),
+
+    verificarErros
+];
