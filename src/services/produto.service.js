@@ -1,5 +1,6 @@
 import ProdutoRepository from '../repositories/produto.repository.js';
 import { ProdutoResponseDTO } from '../dtos/produto.dto.js';
+import FuncionarioRepository from '../repositories/funcionario.repository.js';
 
 class ProdutoService {
     static async getAll(busca = '') {
@@ -13,6 +14,11 @@ class ProdutoService {
                 p.referencia.toLowerCase().includes(termo)
             );
         }
+
+        filtrados.sort((a, b) => {
+            if (a.ativo === b.ativo) return 0;
+            return a.ativo ? -1 : 1;
+        });
 
         return filtrados.map(p => new ProdutoResponseDTO(p));
     }
@@ -29,7 +35,21 @@ class ProdutoService {
         return new ProdutoResponseDTO(produto);
     }
 
-    static async create(dados) {
+    static async create(dados, idSolicitante) {
+        const funcionario = await FuncionarioRepository.findById(idSolicitante);
+
+        if (!funcionario) {
+            const error = new Error('Funcionário solicitante não encontrado no sistema.');
+            error.statusCode = 404;
+            throw error;
+        }
+
+        if (!funcionario.ativo) {
+            const error = new Error('Funcionários inativos não podem cadastrar produtos.');
+            error.statusCode = 403;
+            throw error;
+        }
+
         const produtos = await ProdutoRepository.findAll();
 
         const referenciaExiste = produtos.find(p => p.referencia === dados.referencia);
@@ -45,6 +65,8 @@ class ProdutoService {
             error.statusCode = 409;
             throw error;
         }
+
+        dados.cadastradoPor = Number(idSolicitante);
 
         const novoProduto = await ProdutoRepository.create(dados);
         return new ProdutoResponseDTO(novoProduto);

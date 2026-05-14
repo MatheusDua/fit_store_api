@@ -17,7 +17,7 @@ class ProdutoRepository {
 
         const proximoId = produtos.length > 0 ? Math.max(...produtos.map(p => p.id)) + 1 : 1;
 
-        const novoProduto = { id: proximoId, ...produtoData, ativo: true };
+        const novoProduto = { id: proximoId, ativo: true, ...produtoData };
         produtos.push(novoProduto);
 
         await db.write();

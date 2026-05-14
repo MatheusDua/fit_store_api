@@ -8,6 +8,8 @@ export class ProdutoResponseDTO {
         this.preco = Number(produto.preco).toFixed(2);
         this.estoque = produto.estoque;
 
+        this.cadastradoPor = produto.cadastradoPor;
+
         this.disponivel = produto.estoque > 0;
         this.ativo = produto.ativo !== false;
     }

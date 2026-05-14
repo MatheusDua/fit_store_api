@@ -34,7 +34,7 @@ class FuncionarioController {
         try {
             const { id } = req.params;
             const dados = req.body;
-            const idSolicitante = req.headers['x-funcionario-id'];
+            const idSolicitante = req.headers['funcionario'];
 
             const funcionarioAtualizado = await FuncionarioService.atualizar(id, dados, idSolicitante);
             res.status(200).json(funcionarioAtualizado);
@@ -46,7 +46,7 @@ class FuncionarioController {
     static async inativar(req, res, next) {
         try {
             const { id } = req.params;
-            const idSolicitante = req.headers['x-funcionario-id'];
+            const idSolicitante = req.headers['funcionario'];
 
             const resultado = await FuncionarioService.inativar(id, idSolicitante);
             res.status(200).json(resultado);

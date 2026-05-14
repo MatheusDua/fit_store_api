@@ -26,8 +26,15 @@ class ProdutoController {
     static async create(req, res, next) {
         try {
             const dados = req.body;
-            const novoProduto = await ProdutoService.create(dados);
+            const idSolicitante = req.headers['funcionario'];
 
+            if (!idSolicitante) {
+                const error = new Error('Acesso negado: ID do funcionário obrigatório no header (funcionario).');
+                error.statusCode = 401;
+                throw error;
+            }
+
+            const novoProduto = await ProdutoService.create(dados, idSolicitante);
             res.status(201).json(novoProduto);
         } catch (error) {
             next(error);
