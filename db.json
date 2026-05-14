@@ -7,9 +7,9 @@
       "categoria": "Calças",
       "tamanho": "M",
       "preco": 119.9,
-      "estoque": 10,
-      "ativo": true,
-      "id_funcionario": 1
+      "estoque": 8,
+      "cadastradoPor": 1,
+      "ativo": true
     },
     {
       "id": 2,
@@ -19,8 +19,8 @@
       "tamanho": "P",
       "preco": 59.9,
       "estoque": 0,
-      "ativo": true,
-      "id_funcionario": 1
+      "cadastradoPor": 1,
+      "ativo": false
     },
     {
       "id": 3,
@@ -30,41 +30,133 @@
       "tamanho": "G",
       "preco": 75,
       "estoque": 5,
-      "ativo": true,
-      "id_funcionario": 2
+      "cadastradoPor": 2,
+      "ativo": true
     },
     {
       "id": 4,
-      "nome": "Legging Preta",
-      "referencia": "LEG-001",
-      "preco": 89.9,
-      "estoque": 10,
-      "ativo": true,
-      "id_funcionario": 2
+      "referencia": "CAM-010-BR",
+      "nome": "Camiseta Dry Fit Branca",
+      "categoria": "Camisetas",
+      "tamanho": "G",
+      "preco": 45,
+      "estoque": 20,
+      "cadastradoPor": 3,
+      "ativo": true
     },
     {
       "id": 5,
-      "nome": "Legging Preta-verde",
-      "referencia": "LEG-043",
+      "referencia": "REG-022-PT",
+      "nome": "Regata Cavada Premium",
+      "categoria": "Camisetas",
+      "tamanho": "M",
+      "preco": 49.9,
+      "estoque": 15,
+      "cadastradoPor": 1,
+      "ativo": true
+    },
+    {
+      "id": 6,
+      "referencia": "BER-008-AZ",
+      "nome": "Bermuda Térmica Compressão",
+      "categoria": "Shorts",
+      "tamanho": "GG",
       "preco": 89.9,
-      "estoque": 10,
+      "estoque": 0,
+      "cadastradoPor": 2,
+      "ativo": true
+    },
+    {
+      "id": 7,
+      "referencia": "JAQ-001-VD",
+      "nome": "Jaqueta Corta Vento Neofit",
+      "categoria": "Casacos",
+      "tamanho": "G",
+      "preco": 159.9,
+      "estoque": 5,
+      "cadastradoPor": 3,
+      "ativo": false
+    },
+    {
+      "id": 8,
+      "referencia": "MEI-010-BR",
+      "nome": "Kit Meias Antiderrapantes",
+      "categoria": "Acessórios",
+      "tamanho": "U",
+      "preco": 29.9,
+      "estoque": 30,
+      "cadastradoPor": 4,
+      "ativo": true
+    },
+    {
+      "id": 9,
+      "referencia": "CAL-099-PR",
+      "nome": "Calça Térmica Pro (Antiga)",
+      "categoria": "Calças",
+      "tamanho": "P",
+      "preco": 149.9,
+      "estoque": 2,
       "ativo": true,
-      "id_funcionario": 2
+      "cadastradoPor": 1
+    },
+    {
+      "id": 10,
+      "referencia": "TOP-088-LR",
+      "nome": "Top Impact Laranja Neon",
+      "categoria": "Tops",
+      "tamanho": "M",
+      "preco": 79.9,
+      "estoque": 8,
+      "cadastradoPor": 2,
+      "ativo": true
+    },
+    {
+      "id": 11,
+      "referencia": "CAS-500-PT",
+      "nome": "Blusão Moletom Oversized Black",
+      "categoria": "Casacos",
+      "tamanho": "GG",
+      "preco": 189,
+      "estoque": 4,
+      "ativo": true,
+      "cadastradoPor": 3
+    },
+    {
+      "id": 12,
+      "referencia": "GAR-001-RX",
+      "nome": "Garrafa Térmica Inox 1L",
+      "categoria": "Acessórios",
+      "tamanho": "U",
+      "preco": 65,
+      "estoque": 12,
+      "cadastradoPor": 4,
+      "ativo": true
+    },
+    {
+      "id": 13,
+      "ativo": false,
+      "referencia": "COL-OLD-01",
+      "nome": "Legging Vintage 2022",
+      "categoria": "Calças",
+      "tamanho": "P",
+      "preco": 40,
+      "estoque": 5,
+      "cadastradoPor": 1
     }
   ],
   "funcionarios": [
     {
       "id": 1,
-      "nome": "Matheus Gerente",
+      "nome": "Matheus Felipe",
       "email": "matheus@fitstore.com",
       "cargo": "Gerente",
       "ativo": true
     },
     {
       "id": 2,
-      "nome": "Ana Vendedora",
+      "nome": "Ana Clara",
       "email": "ana@fitstore.com",
-      "cargo": "Vendedor",
+      "cargo": "Vendedora",
       "ativo": true
     },
     {
@@ -76,17 +168,10 @@
     },
     {
       "id": 4,
-      "nome": "João Carlos",
-      "email": "joao1@fitstore.com",
-      "cargo": "Vendedor",
-      "ativo": true
-    },
-    {
-      "id": 5,
-      "nome": "Hacker",
-      "email": "hacker@fitstore.com",
-      "cargo": "Invasor",
-      "ativo": true
+      "nome": "Lucas Estagiário",
+      "email": "lucas@fitstore.com",
+      "cargo": "Estagiário",
+      "ativo": false
     }
   ]
 }
