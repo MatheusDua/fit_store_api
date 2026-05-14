@@ -16,9 +16,5 @@
     "express-validator": "^7.3.2",
     "lowdb": "^7.0.1",
     "pug": "^3.0.4"
-  },
-  "devDependencies": {
-    "@prettier/plugin-pug": "^3.4.2",
-    "prettier": "^3.8.3"
   }
 }
