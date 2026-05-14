@@ -11,14 +11,15 @@ html(lang="pt-BR")
         .nav-container
           a.logo(href="/vitrine") FitStore
           .search-box
-            form(action="/vitrine", method="GET")
-              input(
-                type="text",
-                name="busca",
-                placeholder="Nome ou referência...",
-                value=busca
-              )
-              button(type="submit") Buscar
+            if mostrarBusca
+              form(action="/vitrine", method="GET")
+                input(
+                  type="text",
+                  name="busca",
+                  placeholder="Nome ou referência...",
+                  value=busca
+                )
+                button(type="submit") Buscar
 
     main.container
       block content

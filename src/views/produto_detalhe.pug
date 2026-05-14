@@ -17,5 +17,7 @@ block content
       if produto.ativo === false
         p.badge-inativo Este produto está desativado no sistema.
 
+      p.autor-id(style="color: gray; font-size: 0.9em; margin-top: 15px") Criado por: #{ produto.nomeAutor }
+
       .acoes-detalhe
         a.btn-voltar(href="/vitrine") &larr; Voltar para a Vitrine

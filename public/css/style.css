@@ -34,6 +34,7 @@ body {
 
 .search-box form {
   display: flex;
+  border-radius: 4px;
 }
 
 .search-box input {
@@ -51,6 +52,14 @@ body {
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   font-weight: bold;
+}
+
+.search-box input:focus {
+  outline: none;
+}
+
+.search-box form:focus-within {
+  box-shadow: 0 0 0 2px #3b82f6;
 }
 
 .container {
@@ -148,4 +157,20 @@ footer {
   padding: 4rem 0;
   color: #a4b0be;
   font-size: 0.9rem;
+}
+
+.card-inativo {
+  opacity: 0.5;
+  filter: grayscale(0.8);
+  border: 1px dashed #ccc;
+}
+
+.badge-inativo-vitrine {
+  background: #636e72;
+  color: var(--white);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  display: inline-block;
 }

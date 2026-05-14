@@ -1,0 +1,23 @@
+extends layouts/main.pug
+
+block content
+  .equipe-container
+    h1 Gestão de Equipe
+
+    table(style="width: 100%; border-collapse: collapse; margin-top: 20px")
+      thead
+        tr(style="background-color: #f4f4f4")
+          th ID
+          th Nome
+          th Cargo
+          th Status
+      tbody
+        each f in funcionarios
+          tr(style="border-bottom: 1px solid #ddd; text-align: center")
+            td= f.id
+            td= f.nome
+            td= f.cargo
+            td= f.ativo ? "Ativo" : "Inativo"
+
+    .acoes-web
+      a.btn-voltar(href="/") Voltar para Home
