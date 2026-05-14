@@ -43,6 +43,7 @@ Para interagir com os endpoints da API, recomenda-se o uso de ferramentas como T
 
 #### Exemplo de Requisição (Cadastro de Produto):
 
+- **Método HTTP**: POST
 - **URL**: http://localhost:3000/api/produtos
 - **Header**: `funcionario : 1`
 - **Body (JSON)**:
