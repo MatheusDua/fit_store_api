@@ -3,7 +3,6 @@ import ProdutoService from '../services/produto.service.js';
 class ProdutoController {
     static async getAll(req, res, next) {
         try {
-            // Se o usuário digitar na URL: /produtos?busca=legging
             const busca = req.query.busca || '';
             const produtos = await ProdutoService.getAll(busca);
 
@@ -29,7 +28,6 @@ class ProdutoController {
             const dados = req.body;
             const novoProduto = await ProdutoService.create(dados);
 
-            // 201 Created é o código HTTP padrão para criação com sucesso
             res.status(201).json(novoProduto);
         } catch (error) {
             next(error);

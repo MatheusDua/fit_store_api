@@ -6,15 +6,6 @@ class ProdutoRepository {
         return db.data.produtos;
     }
 
-    static async findProduct(campo, valor) {
-        await db.read();
-        const termo = valor.toString().toLowerCase();
-
-        return db.data.produtos.filter(p =>
-            p[campo] && p[campo].toString().toLowerCase() === termo
-        );
-    }
-
     static async findById(id) {
         await db.read();
         return db.data.produtos.find(p => p.id === Number(id));
